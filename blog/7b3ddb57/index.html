@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Hexo优化，Hexo," />
 
 
 
@@ -79,11 +79,15 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="北极鸥">
-<meta property="og:url" content="https:&#x2F;&#x2F;hhl.ink&#x2F;index.html">
+<meta name="description" content="前言  优化 HEXO 博客，有一些坑需要注意 博客网站连接URL永久化设置主要使用插件hexo-addrlin对文章做永久化链接，安装命令： 1npm install hexo-abbrlink --save 在Hexo 根目录中的配置文件_config.yml中修改： 12345permalink: :abbrlink&#x2F;#abbrlink configabbrlink:  alg: crc32">
+<meta name="keywords" content="Hexo优化，Hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo优化">
+<meta property="og:url" content="https:&#x2F;&#x2F;hhl.ink&#x2F;blog&#x2F;7b3ddb57&#x2F;index.html">
 <meta property="og:site_name" content="北极鸥">
+<meta property="og:description" content="前言  优化 HEXO 博客，有一些坑需要注意 博客网站连接URL永久化设置主要使用插件hexo-addrlin对文章做永久化链接，安装命令： 1npm install hexo-abbrlink --save 在Hexo 根目录中的配置文件_config.yml中修改： 12345permalink: :abbrlink&#x2F;#abbrlink configabbrlink:  alg: crc32">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-12-01T11:36:00.990Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -114,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="https://hhl.ink/"/>
+  <link rel="canonical" href="https://hhl.ink/blog/7b3ddb57/"/>
 
 
 
 
 
-  <title>北极鸥</title>
+  <title>Hexo优化 | 北极鸥</title>
   
 
 
@@ -149,8 +153,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -277,9 +280,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -309,9 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/7b3ddb57/" itemprop="url">Hexo优化</a></h1>
+          <h1 class="post-title" itemprop="name headline">Hexo优化</h1>
         
 
         <div class="post-meta">
@@ -383,23 +384,23 @@
       
 
       
-        
-          
-          前言  优化 HEXO 博客，有一些坑需要注意
-博客网站连接URL永久化设置主要使用插件hexo-addrlin对文章做永久化链接，安装命令：
-1npm install hexo-abbrlink --save
-在Hexo 根目录中的配置文件_config.yml中修改：
-12345permalink: :abbrlink/#abbrlink configabbrlink:  alg: crc32  # 算法：crc16(default) and crc32  rep: dec    # 进制：dec(default) and hex
-在使用了这个插件后，需要执行一次hexo clean，否则
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/blog/7b3ddb57/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  优化 HEXO 博客，有一些坑需要注意</p>
+<h2 id="博客网站连接URL永久化设置"><a href="#博客网站连接URL永久化设置" class="headerlink" title="博客网站连接URL永久化设置"></a>博客网站连接URL永久化设置</h2><p>主要使用插件<a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="noopener">hexo-addrlin</a>对文章做永久化链接，安装命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+<p>在Hexo 根目录中的配置文件<code>_config.yml</code>中修改：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">permalink: :abbrlink/</span><br><span class="line">#abbrlink config</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: dec    # 进制：dec(default) and hex</span><br></pre></td></tr></table></figure>
+<p>在使用了这个插件后，需要执行一次<code>hexo clean</code>，否则之前的博文可能会变为undefined。</p>
+<h2 id="站内搜索"><a href="#站内搜索" class="headerlink" title="站内搜索"></a>站内搜索</h2><p>主要使用插件<a href="https://github.com/theme-next/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-searchdb</a>对站内进行关键字搜索，安装命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+<p>在根目录中的配置文件<code>_config.yml</code>中添加：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br><span class="line">  content: true</span><br></pre></td></tr></table></figure>
+<p>在单个文档中<em>front-matter</em>添加<code>indexing: false</code>可以避免搜索该文档。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://zuiyu1818.cn/posts/NexT_seourl.html" target="_blank" rel="noopener">醉渔小站</a></li>
+<li><a href="https://blog.csdn.net/cpongo3/article/details/98633222" target="_blank" rel="noopener">Hexo插件使用</a></li>
+<li><a href="https://github.com/theme-next/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-searchdb</a></li>
+</ul>
+
       
     </div>
     
@@ -414,301 +415,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hhl.ink/blog/c562e1dd/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sternapeg">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="北极鸥">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/c562e1dd/" itemprop="url">my test post</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-13T18:24:12+08:00">
-                2019-11-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/Hexo%E4%BC%98%E5%8C%96%EF%BC%8CHexo/" rel="tag"># Hexo优化，Hexo</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/blog/c562e1dd/#more" rel="contents">
-              Read more &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/c562e1dd/" rel="next" title="my test post">
+                <i class="fa fa-chevron-left"></i> my test post
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hhl.ink/blog/7c1fc327/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sternapeg">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="北极鸥">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/7c1fc327/" itemprop="url">初衷</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-08-16T13:16:00+08:00">
-                2019-08-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E4%B8%AA%E4%BA%BA%E6%84%9F%E6%83%B3/" itemprop="url" rel="index">
-                    <span itemprop="name">个人感想</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-          初衷很早以前一直想着自己想维护一个博客，主要是想着对自己的知识做一个积累，内容做一个分享。让自己在提升的过程中，也能给别人一点点帮助。
-个人想法
-写作能整理下自我思路，促进自己成长
-博客分享，能够拉近同行或者感兴趣人，大家能够对某一个话题，深入探讨，让话题更有深度
-算是一种社交方式，拓展技术人员的圈子，认识志同道合的朋友
-记录自己的积累点滴
-
-最后凡事贵在坚持，希望自己能够坚持下去。
-涉猎范围
-网络安全
-数据分析
-个人感想
-
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/blog/7c1fc327/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -718,142 +454,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hhl.ink/blog/4a17b156/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sternapeg">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="北极鸥">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/4a17b156/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-13T18:24:12+08:00">
-                2019-07-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-
-More info: Writing
-Run server1$ hexo server
-
-More 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/blog/4a17b156/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -861,6 +466,10 @@ More
 
 
           
+
+  
+
+
 
         </div>
         
@@ -881,8 +490,17 @@ More
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -952,6 +570,22 @@ More
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#博客网站连接URL永久化设置"><span class="nav-number">2.</span> <span class="nav-text">博客网站连接URL永久化设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#站内搜索"><span class="nav-number">3.</span> <span class="nav-text">站内搜索</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">4.</span> <span class="nav-text">参考</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1092,6 +726,10 @@ More
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 

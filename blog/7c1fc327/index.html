@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="初衷," />
 
 
 
@@ -79,11 +79,15 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="北极鸥">
-<meta property="og:url" content="https:&#x2F;&#x2F;hhl.ink&#x2F;index.html">
+<meta name="description" content="初衷很早以前一直想着自己想维护一个博客，主要是想着对自己的知识做一个积累，内容做一个分享。让自己在提升的过程中，也能给别人一点点帮助。 个人想法 写作能整理下自我思路，促进自己成长 博客分享，能够拉近同行或者感兴趣人，大家能够对某一个话题，深入探讨，让话题更有深度 算是一种社交方式，拓展技术人员的圈子，认识志同道合的朋友 记录自己的积累点滴  最后凡事贵在坚持，希望自己能够坚持下去。 涉猎范围 网">
+<meta name="keywords" content="初衷">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初衷">
+<meta property="og:url" content="https:&#x2F;&#x2F;hhl.ink&#x2F;blog&#x2F;7c1fc327&#x2F;index.html">
 <meta property="og:site_name" content="北极鸥">
+<meta property="og:description" content="初衷很早以前一直想着自己想维护一个博客，主要是想着对自己的知识做一个积累，内容做一个分享。让自己在提升的过程中，也能给别人一点点帮助。 个人想法 写作能整理下自我思路，促进自己成长 博客分享，能够拉近同行或者感兴趣人，大家能够对某一个话题，深入探讨，让话题更有深度 算是一种社交方式，拓展技术人员的圈子，认识志同道合的朋友 记录自己的积累点滴  最后凡事贵在坚持，希望自己能够坚持下去。 涉猎范围 网">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-12-01T10:53:06.074Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -114,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="https://hhl.ink/"/>
+  <link rel="canonical" href="https://hhl.ink/blog/7c1fc327/"/>
 
 
 
 
 
-  <title>北极鸥</title>
+  <title>初衷 | 北极鸥</title>
   
 
 
@@ -149,8 +153,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -277,288 +280,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hhl.ink/blog/7b3ddb57/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sternapeg">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="北极鸥">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/7b3ddb57/" itemprop="url">Hexo优化</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-12-01T18:20:35+08:00">
-                2019-12-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          前言  优化 HEXO 博客，有一些坑需要注意
-博客网站连接URL永久化设置主要使用插件hexo-addrlin对文章做永久化链接，安装命令：
-1npm install hexo-abbrlink --save
-在Hexo 根目录中的配置文件_config.yml中修改：
-12345permalink: :abbrlink/#abbrlink configabbrlink:  alg: crc32  # 算法：crc16(default) and crc32  rep: dec    # 进制：dec(default) and hex
-在使用了这个插件后，需要执行一次hexo clean，否则
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/blog/7b3ddb57/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hhl.ink/blog/c562e1dd/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sternapeg">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="北极鸥">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/c562e1dd/" itemprop="url">my test post</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-11-13T18:24:12+08:00">
-                2019-11-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/blog/c562e1dd/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -588,9 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/7c1fc327/" itemprop="url">初衷</a></h1>
+          <h1 class="post-title" itemprop="name headline">初衷</h1>
         
 
         <div class="post-meta">
@@ -662,31 +384,20 @@
       
 
       
-        
-          
-          初衷很早以前一直想着自己想维护一个博客，主要是想着对自己的知识做一个积累，内容做一个分享。让自己在提升的过程中，也能给别人一点点帮助。
-个人想法
-写作能整理下自我思路，促进自己成长
-博客分享，能够拉近同行或者感兴趣人，大家能够对某一个话题，深入探讨，让话题更有深度
-算是一种社交方式，拓展技术人员的圈子，认识志同道合的朋友
-记录自己的积累点滴
+        <h1 id="初衷"><a href="#初衷" class="headerlink" title="初衷"></a>初衷</h1><p>很早以前一直想着自己想维护一个博客，主要是想着对自己的知识做一个积累，内容做一个分享。让自己在提升的过程中，也能给别人一点点帮助。</p>
+<h1 id="个人想法"><a href="#个人想法" class="headerlink" title="个人想法"></a>个人想法</h1><ul>
+<li>写作能整理下自我思路，促进自己成长</li>
+<li>博客分享，能够拉近同行或者感兴趣人，大家能够对某一个话题，深入探讨，让话题更有深度</li>
+<li>算是一种社交方式，拓展技术人员的圈子，认识志同道合的朋友</li>
+<li>记录自己的积累点滴</li>
+</ul>
+<h1 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h1><p>凡事贵在坚持，希望自己能够坚持下去。</p>
+<h1 id="涉猎范围"><a href="#涉猎范围" class="headerlink" title="涉猎范围"></a>涉猎范围</h1><ul>
+<li>网络安全</li>
+<li>数据分析</li>
+<li>个人感想</li>
+</ul>
 
-最后凡事贵在坚持，希望自己能够坚持下去。
-涉猎范围
-网络安全
-数据分析
-个人感想
-
-
-          
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/blog/7c1fc327/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
       
     </div>
     
@@ -701,146 +412,40 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://hhl.ink/blog/4a17b156/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Sternapeg">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="北极鸥">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/4a17b156/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-07-13T18:24:12+08:00">
-                2019-07-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/%E5%88%9D%E8%A1%B7/" rel="tag"># 初衷</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new "My New Post"
-
-More info: Writing
-Run server1$ hexo server
-
-More 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/blog/4a17b156/#more" rel="contents">
-              Read more &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog/4a17b156/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/blog/c562e1dd/" rel="prev" title="my test post">
+                my test post <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -850,10 +455,11 @@ More
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -861,6 +467,10 @@ More
 
 
           
+
+  
+
+
 
         </div>
         
@@ -881,8 +491,17 @@ More
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -952,6 +571,22 @@ More
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#初衷"><span class="nav-number">1.</span> <span class="nav-text">初衷</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#个人想法"><span class="nav-number">2.</span> <span class="nav-text">个人想法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#最后"><span class="nav-number">3.</span> <span class="nav-text">最后</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#涉猎范围"><span class="nav-number">4.</span> <span class="nav-text">涉猎范围</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1092,6 +727,10 @@ More
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
