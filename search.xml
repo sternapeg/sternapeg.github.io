@@ -4,10 +4,12 @@
     <title>Hexo优化</title>
     <url>/blog/7b3ddb57/</url>
     <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  优化 HEXO 博客，有一些坑需要注意</p>
+<a id="more"></a>
+
 <h2 id="博客网站连接URL永久化设置"><a href="#博客网站连接URL永久化设置" class="headerlink" title="博客网站连接URL永久化设置"></a>博客网站连接URL永久化设置</h2><p>主要使用插件<a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="noopener">hexo-addrlin</a>对文章做永久化链接，安装命令：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
 <p>在Hexo 根目录中的配置文件<code>_config.yml</code>中修改：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: :abbrlink/</span><br><span class="line">#abbrlink config</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: dec    # 进制：dec(default) and hex</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: :abbrlink&#x2F;</span><br><span class="line">#abbrlink config</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: dec    # 进制：dec(default) and hex</span><br></pre></td></tr></table></figure>
 <p>在使用了这个插件后，需要执行一次<code>hexo clean</code>，否则之前的博文可能会变为undefined。</p>
 <h2 id="站内搜索"><a href="#站内搜索" class="headerlink" title="站内搜索"></a>站内搜索</h2><p>主要使用插件<a href="https://github.com/theme-next/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-searchdb</a>对站内进行关键字搜索，安装命令：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
@@ -28,9 +30,40 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/blog/4a17b156/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<a id="more"></a>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>newpage</title>
+    <url>/blog/606023cc/</url>
+    <content><![CDATA[<h1 id="新日志"><a href="#新日志" class="headerlink" title="新日志"></a>新日志</h1><h2 id="测试下"><a href="#测试下" class="headerlink" title="测试下"></a>测试下</h2><p>这是一张图片</p>
+<img src="shanshui.jpg" class="img-logo" />
+
+]]></content>
+      <tags>
+        <tag>风景</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>初衷</title>
     <url>/blog/7c1fc327/</url>
     <content><![CDATA[<h1 id="初衷"><a href="#初衷" class="headerlink" title="初衷"></a>初衷</h1><p>很早以前一直想着自己想维护一个博客，主要是想着对自己的知识做一个积累，内容做一个分享。让自己在提升的过程中，也能给别人一点点帮助。</p>
+<a id="more"></a>
 <h1 id="个人想法"><a href="#个人想法" class="headerlink" title="个人想法"></a>个人想法</h1><ul>
 <li>写作能整理下自我思路，促进自己成长</li>
 <li>博客分享，能够拉近同行或者感兴趣人，大家能够对某一个话题，深入探讨，让话题更有深度</li>
@@ -50,23 +83,5 @@
       <tags>
         <tag>初衷</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/blog/4a17b156/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-]]></content>
   </entry>
 </search>
