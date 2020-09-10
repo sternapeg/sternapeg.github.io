@@ -30,16 +30,6 @@
       </tags>
   </entry>
   <entry>
-    <title>IoT_protocol</title>
-    <url>/blog/a5c5e240/</url>
-    <content><![CDATA[<h1 id="物联网（IoT）协议"><a href="#物联网（IoT）协议" class="headerlink" title="物联网（IoT）协议"></a>物联网（IoT）协议</h1><p>许多通信协议虽然众所周知，但是换存在一些新的协议，用于物联网。实际工程中，会根据不同的应用，有些因素，如范围，数据要求，安全和电力需求和电池寿命将决定一个选择或某种形式的技术组合。</p>
-<h2 id="Bluetooth-蓝牙"><a href="#Bluetooth-蓝牙" class="headerlink" title="Bluetooth(蓝牙)"></a>Bluetooth(蓝牙)</h2><p>蓝牙是一个重要的短距离通信技术，在计算和许多消费产品市场中非常重要。它对可穿戴的产品有望成为关键，在通常许多情况下，智能电话就能够通过其连接到IoT。新的低功耗蓝牙（BLE）或叫做智能蓝牙，是物联网应用的一个重要协议。它提供与普通蓝牙相近的传输距离，但是能够明显降低功耗。</p>
-]]></content>
-      <categories>
-        <category>IoT</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/blog/4a17b156/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
@@ -59,6 +49,27 @@
 ]]></content>
   </entry>
   <entry>
+    <title>IoT_protocol</title>
+    <url>/blog/a5c5e240/</url>
+    <content><![CDATA[<h1 id="物联网（IoT）协议"><a href="#物联网（IoT）协议" class="headerlink" title="物联网（IoT）协议"></a>物联网（IoT）协议</h1><p>许多通信协议虽然众所周知，但是换存在一些新的协议，用于物联网。实际工程中，会根据不同的应用，有些因素，如范围，数据要求，安全和电力需求和电池寿命将决定一个选择或某种形式的技术组合。</p>
+<h2 id="Bluetooth-蓝牙"><a href="#Bluetooth-蓝牙" class="headerlink" title="Bluetooth(蓝牙)"></a>Bluetooth(蓝牙)</h2><p>蓝牙是一个重要的短距离通信技术，在计算和许多消费产品市场中非常重要。它对可穿戴的产品有望成为关键，在通常许多情况下，智能电话就能够通过其连接到IoT。新的低功耗蓝牙（BLE）或叫做智能蓝牙，是物联网应用的一个重要协议。它提供与普通蓝牙相近的传输距离，但是能够明显降低功耗。</p>
+]]></content>
+      <categories>
+        <category>IoT</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>newpage</title>
+    <url>/blog/606023cc/</url>
+    <content><![CDATA[<h1 id="新日志"><a href="#新日志" class="headerlink" title="新日志"></a>新日志</h1><h2 id="测试下"><a href="#测试下" class="headerlink" title="测试下"></a>测试下</h2><p>这是一张图片</p>
+<img src="shanshui.jpg" class="img-logo" />
+
+]]></content>
+      <tags>
+        <tag>风景</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>IoT 是什么</title>
     <url>/blog/932ec759/</url>
     <content><![CDATA[<h1 id="物联网是什么？"><a href="#物联网是什么？" class="headerlink" title="物联网是什么？"></a>物联网是什么？</h1><p>物联网作为我国新经济增长的战略新兴产业，早在2011年就收获了2600多亿的市场规模。它是继通信网之后的另一个万亿级市场。在未来，物联网还将是推动世界发展的下一个重要生产力。</p>
@@ -72,17 +83,6 @@
 <p>物联网把新一代IT技术充分运用在各行各业中，具体地说，就是把感应器嵌入和装备到电网、铁路、桥梁、隧道、公路、建筑、供水系统、大坝、油气管等各种物体中，然后将“物联网”与现有的中心计算机群，能够对整合网络内的人员、机器、设备和基础设施实时的管理和控制，在此基础上，人类可以以更加精细和动态的方式管理生产和生活，达到“智慧”状态，提高资源利用率和生产水平，改善人与自然间的关系。</p>
 <p><strong>结束：</strong> 物联网的出现已在慢慢改变我们每一个人的工作生活，在物联网给我们带来便利安全的同时，也给不法分子提供了一些不安全入口，所以物联网的技术创新、安全保证和市场推广是现在面临的主要问题，也是很对企业和创业者面临的重要问题。··</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>newpage</title>
-    <url>/blog/606023cc/</url>
-    <content><![CDATA[<h1 id="新日志"><a href="#新日志" class="headerlink" title="新日志"></a>新日志</h1><h2 id="测试下"><a href="#测试下" class="headerlink" title="测试下"></a>测试下</h2><p>这是一张图片</p>
-<img src="shanshui.jpg" class="img-logo" />
-
-]]></content>
-      <tags>
-        <tag>风景</tag>
-      </tags>
   </entry>
   <entry>
     <title>初衷</title>
