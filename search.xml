@@ -1,48 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo优化</title>
-    <url>/blog/7b3ddb57/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  优化 HEXO 博客，有一些坑需要注意</p>
-<a id="more"></a>
-
-<h2 id="博客网站连接URL永久化设置"><a href="#博客网站连接URL永久化设置" class="headerlink" title="博客网站连接URL永久化设置"></a>博客网站连接URL永久化设置</h2><p>主要使用插件<a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="noopener">hexo-addrlin</a>对文章做永久化链接，安装命令：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-<p>在Hexo 根目录中的配置文件<code>_config.yml</code>中修改：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: :abbrlink&#x2F;</span><br><span class="line">#abbrlink config</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: dec    # 进制：dec(default) and hex</span><br></pre></td></tr></table></figure>
-<p>在使用了这个插件后，需要执行一次<code>hexo clean</code>，否则之前的博文可能会变为undefined。</p>
-<h2 id="站内搜索"><a href="#站内搜索" class="headerlink" title="站内搜索"></a>站内搜索</h2><p>主要使用插件<a href="https://github.com/theme-next/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-searchdb</a>对站内进行关键字搜索，安装命令：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
-<p>在根目录中的配置文件<code>_config.yml</code>中添加：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br><span class="line">  content: true</span><br></pre></td></tr></table></figure>
-<p>在单个文档中<em>front-matter</em>添加<code>indexing: false</code>可以避免搜索该文档。</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a href="https://zuiyu1818.cn/posts/NexT_seourl.html" target="_blank" rel="noopener">醉渔小站</a></li>
-<li><a href="https://blog.csdn.net/cpongo3/article/details/98633222" target="_blank" rel="noopener">Hexo插件使用</a></li>
-<li><a href="https://github.com/theme-next/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-searchdb</a></li>
-</ul>
+    <title>IoT_protocol</title>
+    <url>/blog/a5c5e240/</url>
+    <content><![CDATA[<h1 id="物联网（IoT）协议"><a href="#物联网（IoT）协议" class="headerlink" title="物联网（IoT）协议"></a>物联网（IoT）协议</h1><p>许多通信协议虽然众所周知，但是换存在一些新的协议，用于物联网。实际工程中，会根据不同的应用，有些因素，如范围，数据要求，安全和电力需求和电池寿命将决定一个选择或某种形式的技术组合。</p>
+<h2 id="Bluetooth-蓝牙"><a href="#Bluetooth-蓝牙" class="headerlink" title="Bluetooth(蓝牙)"></a>Bluetooth(蓝牙)</h2><p>蓝牙是一个重要的短距离通信技术，在计算和许多消费产品市场中非常重要。它对可穿戴的产品有望成为关键，在通常许多情况下，智能电话就能够通过其连接到IoT。新的低功耗蓝牙（BLE）或叫做智能蓝牙，是物联网应用的一个重要协议。它提供与普通蓝牙相近的传输距离，但是能够明显降低功耗。</p>
 ]]></content>
       <categories>
-        <category>Hexo</category>
+        <category>IoT</category>
       </categories>
-      <tags>
-        <tag>Hexo优化，Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>IoT 是什么</title>
-    <url>/blog/932ec759/</url>
-    <content><![CDATA[<h1 id="物联网是什么？"><a href="#物联网是什么？" class="headerlink" title="物联网是什么？"></a>物联网是什么？</h1><p>物联网作为我国新经济增长的战略新兴产业，早在2011年就收获了2600多亿的市场规模。它是继通信网之后的另一个万亿级市场。在未来，物联网还将是推动世界发展的下一个重要生产力。</p>
-<p>物联网是新一代信息技术的重要组成部分，也是“信息化”时代的重要发展阶段。它让生活中孤立的东西接入网络世界，智能、云计算等应运而生。那么物联网技术主要是什么呢？物联网应用领域又有哪些？</p>
-<h2 id="物联网是什么"><a href="#物联网是什么" class="headerlink" title="物联网是什么"></a>物联网是什么</h2><p>物联网的英文名称是：“Internet of things”，缩写为IoT。通俗来讲，就是物物相连的互联网。这有两层意思：其一，物联网的核心和基础仍然是互联网，是在互联网基础哈桑的延伸和扩展的网络；其二，其用户端延伸和扩展到了任何物品与物品之间，进行信息交换和通信，也就是物物相息。物联网通过智能感知、识别技术与普适计算等通信感知技术，广泛应用与网络的融合汇总，被称为继计算机、互联网之后世界信息产业发展的第三次浪潮，也是信息化时代发展中必不可少的部分。</p>
-<p>再简单地说，物联网其实就是将物与物、物与人通过网络关联起来，实现所有物体相互联网的一个系统概念。举个例子，比如某科研室经常再实验室的二楼工作，但是咖啡机在一楼，煮咖啡时经常需要到一楼看咖啡是否煮好？很不方便，也许一般人会想到把咖啡机搬到二楼不就行了？但是大神们的思想毕竟与众不同，脑洞就出来了，他们安装了一个摄像头，并编写一套程序，以每秒3帧的速度传输到楼上电脑，方便他们可以随时观察咖啡是否已经煮好，这就是物联网非常好的一个创意。</p>
-<h2 id="物联网主要技术"><a href="#物联网主要技术" class="headerlink" title="物联网主要技术"></a>物联网主要技术</h2><p>在物联网应用中有三项关键技术为物联网开辟极为广阔的应用前景：<br><strong>1、传感器技术：</strong> 这也是计算机应用中的关键技术。大家都知道，到目前为止绝大部分计算机处理的都是数字信号。自从有计算机以来就需要传感器把模拟信号转换成数字信号，计算机才能处理。</p>
-<p><strong>2、RFID标签：</strong> 也是一种传感器技术，RFID技术是融合了无线射频技术和嵌入式技术为一体的综合技术，RFID在自动识别、物品物流管理有着广阔的应用前景，这也是为什么“物流”这个词总是与“物联网”同时出现。</p>
-<p><strong>3、嵌入式系统：</strong> 是综合了计算机软硬件、传感器技术、集成电路技术、电子应用技术为一体的复杂技术。经过几十年的演变，以嵌入式系统为特征的智能终端产品随处可见；小到人们身边的MP3，大到航空航天的卫星系统。嵌入式系统正在改变人们的生活，推动着工业生产以及国防工业的发展。如果把物联网用人体做一个简单比喻，传感器相当于人的眼睛、鼻子、皮肤等感官，网络就是神经系统用来传递信息，嵌入式系统是人的大脑，在接收到信息后要进行分类处理。这个例子很形象的描述了传感器、嵌入式系统在物联网中的位置与作用。</p>
-<h2 id="物联网应用领域"><a href="#物联网应用领域" class="headerlink" title="物联网应用领域"></a>物联网应用领域</h2><p>物联网用途广泛，遍及智能交通、环境保护、政府工作、公共安全、平安家居、智能消防、工业监测、环境监测、照明管控、老人护理、个人健康、花卉栽培、水系监测、食品溯源、敌情侦查和情报搜集等多个领域。</p>
-<p>物联网把新一代IT技术充分运用在各行各业中，具体地说，就是把感应器嵌入和装备到电网、铁路、桥梁、隧道、公路、建筑、供水系统、大坝、油气管等各种物体中，然后将“物联网”与现有的中心计算机群，能够对整合网络内的人员、机器、设备和基础设施实时的管理和控制，在此基础上，人类可以以更加精细和动态的方式管理生产和生活，达到“智慧”状态，提高资源利用率和生产水平，改善人与自然间的关系。</p>
-<p><strong>结束：</strong> 物联网的出现已在慢慢改变我们每一个人的工作生活，在物联网给我们带来便利安全的同时，也给不法分子提供了一些不安全入口，所以物联网的技术创新、安全保证和市场推广是现在面临的主要问题，也是很对企业和创业者面临的重要问题。··</p>
-]]></content>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -64,25 +30,63 @@
 ]]></content>
   </entry>
   <entry>
-    <title>IoT_protocol</title>
-    <url>/blog/a5c5e240/</url>
-    <content><![CDATA[<h1 id="物联网（IoT）协议"><a href="#物联网（IoT）协议" class="headerlink" title="物联网（IoT）协议"></a>物联网（IoT）协议</h1><p>许多通信协议虽然众所周知，但是换存在一些新的协议，用于物联网。实际工程中，会根据不同的应用，有些因素，如范围，数据要求，安全和电力需求和电池寿命将决定一个选择或某种形式的技术组合。</p>
-<h2 id="Bluetooth-蓝牙"><a href="#Bluetooth-蓝牙" class="headerlink" title="Bluetooth(蓝牙)"></a>Bluetooth(蓝牙)</h2><p>蓝牙是一个重要的短距离通信技术，在计算和许多消费产品市场中非常重要。它对可穿戴的产品有望成为关键，在通常许多情况下，智能电话就能够通过其连接到IoT。新的低功耗蓝牙（BLE）或叫做智能蓝牙，是物联网应用的一个重要协议。它提供与普通蓝牙相近的传输距离，但是能够明显降低功耗。</p>
+    <title>「MAC」 搭建YOLOv5环境「PYTHON」</title>
+    <url>/blog/36ca08da/</url>
+    <content><![CDATA[<p>YOLO是“只看一次”的首字母缩写，YOLO的作者约瑟夫·雷德蒙（Joseph Redmon）将该模型的意思是“只看一次”。顾名思义，YOLO是一个用于高精度图像识别的开源神经网络框架。这次，我想为YOLO v5构建一个环境，这是图像处理领域中的热门话题。</p>
+<a id="more"></a>
+
+<h2 id="什么是YOLO-v5"><a href="#什么是YOLO-v5" class="headerlink" title="什么是YOLO v5"></a>什么是YOLO v5</h2><p>YOLO最初是YOLO的作者约瑟夫·雷德蒙（Joseph Redmon）的首字母缩写，“ You only live一次”（You Only Look Once）。</p>
+<p>到目前为止，v1至v5已发布。约瑟夫·雷德蒙（Joseph Redmon）参与了v1至v4，但由于不涉及v5，因此在vX的命名方面似乎存在利弊。</p>
+<ul>
+<li>YOLOv1公告：2016年5月制片人：Joseph Redmon</li>
+<li>YOLOv2公告：2017年12月制片人：Joseph Redmon</li>
+<li>YOLOv3公告：2018年4月制片人：Joseph Redmon，Ali Farhadi</li>
+<li>YOLOv4公告：2020年4月制片人：Alexey Bochkovskiy</li>
+<li>YOLOv5公告：2020年6月制片人：Glenn Jocher</li>
+</ul>
+<p>YOLO v1〜v3由约瑟夫·雷德蒙（Joseph Redmon）创建。此后，Alexey Bochkovskiy还使用darknet创建了YOLO v4。与以前的版本相比，此v4具有更高的平均精度（AP）和更快的处理速度。<br>2020年6月，Glenn Jocher使用PyTorch发行了YOLOv5，其平均精度（AP）与YOLOv4相当，并且推理处理时间更快。该v5也不使用Darknet，也没有涉及约瑟夫·雷德蒙（Joseph Redmon），因此许多人想知道vX的名称是否正确以及它是否真的比v4有所改进。</p>
+<h3 id="YOLOV5处理速度和平均精度（AP）"><a href="#YOLOV5处理速度和平均精度（AP）" class="headerlink" title="YOLOV5处理速度和平均精度（AP）"></a>YOLOV5处理速度和平均精度（AP）</h3><p>YOLOv5提供四种类型的COCO模型。COCO的平均精度越高，精度越高，但是处理速度越慢。「More info: <a href="https://github.com/ultralytics/yolov5" target="_blank" rel="noopener">YOLOv5</a>」</p>
+<h2 id="如何安装YOLOv5"><a href="#如何安装YOLOv5" class="headerlink" title="如何安装YOLOv5"></a>如何安装YOLOv5</h2><p>我的电脑环境为MBP英特尔系列，操作系统为：macOS Big Sur v11.3.1。</p>
+<h3 id="PYTHON虚拟环境构建"><a href="#PYTHON虚拟环境构建" class="headerlink" title="PYTHON虚拟环境构建"></a>PYTHON虚拟环境构建</h3><p>首先创建python虚拟环境，虽然mac系统自带python，但是不建议使用。构建python环境，最简单的方法是用anaconda3构建虚拟python环境,「请参考: <a href="https://blog.csdn.net/lq_547762983/article/details/81003528" target="_blank" rel="noopener">mac下anaconda的安装及简单使用</a>」</p>
+<p><strong>问题</strong>：在终端输入conda 无法识别这个命令。<br>检查环境变量：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo vi ~&#x2F;.bash_profile</span><br></pre></td></tr></table></figure>
+<p>如果环境变量中没有conda那么要手动添加</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export PATH&#x3D;&quot;&#x2F;Users&#x2F;anaconda3&#x2F;bin:$PATH&quot;（这里要填写自己的路径哦）</span><br></pre></td></tr></table></figure>
+<p>刷新环境变量：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source ~&#x2F;.bash_profile</span><br></pre></td></tr></table></figure>
+<p>再查看 <code>conda list</code>，成功后，开始创建虚拟环境</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">conda create env_yolov5 python&#x3D;3.8</span><br></pre></td></tr></table></figure>
+<h3 id="YOLOv5-安装"><a href="#YOLOv5-安装" class="headerlink" title="YOLOv5 安装"></a>YOLOv5 安装</h3><p>首先我们得本地保存YOLOv5源代码。可以直接在github仓库下载，或则用git下载，需要用到git，若没有其环境，可以自行查找mac如何配置git环境。</p>
+<p>我们可以创建一个工程目录<code>Projects</code>保存<code>yolov5</code>源码。<br>YOLOv5安装</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd ~&#x2F;Projects</span><br><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;ultralytics&#x2F;yolov5.git</span><br></pre></td></tr></table></figure>
+<h3 id="配置yolov5所需的python库。"><a href="#配置yolov5所需的python库。" class="headerlink" title="配置yolov5所需的python库。"></a>配置yolov5所需的python库。</h3><p>切换到现前创建的<code>env_yolov5</code>环境</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cd yolov5</span><br><span class="line">conda activate env_yolov5</span><br><span class="line">pip install -U -r requirements.txt</span><br></pre></td></tr></table></figure>
+<p>如何pip太久的话，请使用命令<code>pip install --upgrade pip</code></p>
+<h2 id="yolov5-使用"><a href="#yolov5-使用" class="headerlink" title="yolov5 使用"></a>yolov5 使用</h2><p>yolov5 使用方法建议参考官方说明文档，「<a href="https://github.com/ultralytics/yolov5#inference" target="_blank" rel="noopener">Inference</a>」</p>
 ]]></content>
       <categories>
-        <category>IoT</category>
+        <category>CV</category>
       </categories>
+      <tags>
+        <tag>CV</tag>
+        <tag>神经网络框架</tag>
+        <tag>目标识别</tag>
+      </tags>
   </entry>
   <entry>
-    <title>newpage</title>
-    <url>/blog/606023cc/</url>
-    <content><![CDATA[<h1 id="新日志"><a href="#新日志" class="headerlink" title="新日志"></a>新日志</h1><h2 id="测试下"><a href="#测试下" class="headerlink" title="测试下"></a>测试下</h2><p>这是一张图片</p>
-<img src="shanshui.jpg" class="img-logo" />
-
+    <title>IoT 是什么</title>
+    <url>/blog/932ec759/</url>
+    <content><![CDATA[<h1 id="物联网是什么？"><a href="#物联网是什么？" class="headerlink" title="物联网是什么？"></a>物联网是什么？</h1><p>物联网作为我国新经济增长的战略新兴产业，早在2011年就收获了2600多亿的市场规模。它是继通信网之后的另一个万亿级市场。在未来，物联网还将是推动世界发展的下一个重要生产力。</p>
+<p>物联网是新一代信息技术的重要组成部分，也是“信息化”时代的重要发展阶段。它让生活中孤立的东西接入网络世界，智能、云计算等应运而生。那么物联网技术主要是什么呢？物联网应用领域又有哪些？</p>
+<h2 id="物联网是什么"><a href="#物联网是什么" class="headerlink" title="物联网是什么"></a>物联网是什么</h2><p>物联网的英文名称是：“Internet of things”，缩写为IoT。通俗来讲，就是物物相连的互联网。这有两层意思：其一，物联网的核心和基础仍然是互联网，是在互联网基础哈桑的延伸和扩展的网络；其二，其用户端延伸和扩展到了任何物品与物品之间，进行信息交换和通信，也就是物物相息。物联网通过智能感知、识别技术与普适计算等通信感知技术，广泛应用与网络的融合汇总，被称为继计算机、互联网之后世界信息产业发展的第三次浪潮，也是信息化时代发展中必不可少的部分。</p>
+<p>再简单地说，物联网其实就是将物与物、物与人通过网络关联起来，实现所有物体相互联网的一个系统概念。举个例子，比如某科研室经常再实验室的二楼工作，但是咖啡机在一楼，煮咖啡时经常需要到一楼看咖啡是否煮好？很不方便，也许一般人会想到把咖啡机搬到二楼不就行了？但是大神们的思想毕竟与众不同，脑洞就出来了，他们安装了一个摄像头，并编写一套程序，以每秒3帧的速度传输到楼上电脑，方便他们可以随时观察咖啡是否已经煮好，这就是物联网非常好的一个创意。</p>
+<h2 id="物联网主要技术"><a href="#物联网主要技术" class="headerlink" title="物联网主要技术"></a>物联网主要技术</h2><p>在物联网应用中有三项关键技术为物联网开辟极为广阔的应用前景：<br><strong>1、传感器技术：</strong> 这也是计算机应用中的关键技术。大家都知道，到目前为止绝大部分计算机处理的都是数字信号。自从有计算机以来就需要传感器把模拟信号转换成数字信号，计算机才能处理。</p>
+<p><strong>2、RFID标签：</strong> 也是一种传感器技术，RFID技术是融合了无线射频技术和嵌入式技术为一体的综合技术，RFID在自动识别、物品物流管理有着广阔的应用前景，这也是为什么“物流”这个词总是与“物联网”同时出现。</p>
+<p><strong>3、嵌入式系统：</strong> 是综合了计算机软硬件、传感器技术、集成电路技术、电子应用技术为一体的复杂技术。经过几十年的演变，以嵌入式系统为特征的智能终端产品随处可见；小到人们身边的MP3，大到航空航天的卫星系统。嵌入式系统正在改变人们的生活，推动着工业生产以及国防工业的发展。如果把物联网用人体做一个简单比喻，传感器相当于人的眼睛、鼻子、皮肤等感官，网络就是神经系统用来传递信息，嵌入式系统是人的大脑，在接收到信息后要进行分类处理。这个例子很形象的描述了传感器、嵌入式系统在物联网中的位置与作用。</p>
+<h2 id="物联网应用领域"><a href="#物联网应用领域" class="headerlink" title="物联网应用领域"></a>物联网应用领域</h2><p>物联网用途广泛，遍及智能交通、环境保护、政府工作、公共安全、平安家居、智能消防、工业监测、环境监测、照明管控、老人护理、个人健康、花卉栽培、水系监测、食品溯源、敌情侦查和情报搜集等多个领域。</p>
+<p>物联网把新一代IT技术充分运用在各行各业中，具体地说，就是把感应器嵌入和装备到电网、铁路、桥梁、隧道、公路、建筑、供水系统、大坝、油气管等各种物体中，然后将“物联网”与现有的中心计算机群，能够对整合网络内的人员、机器、设备和基础设施实时的管理和控制，在此基础上，人类可以以更加精细和动态的方式管理生产和生活，达到“智慧”状态，提高资源利用率和生产水平，改善人与自然间的关系。</p>
+<p><strong>结束：</strong> 物联网的出现已在慢慢改变我们每一个人的工作生活，在物联网给我们带来便利安全的同时，也给不法分子提供了一些不安全入口，所以物联网的技术创新、安全保证和市场推广是现在面临的主要问题，也是很对企业和创业者面临的重要问题。··</p>
 ]]></content>
-      <tags>
-        <tag>风景</tag>
-      </tags>
   </entry>
   <entry>
     <title>初衷</title>
@@ -110,6 +114,17 @@
       </tags>
   </entry>
   <entry>
+    <title>newpage</title>
+    <url>/blog/606023cc/</url>
+    <content><![CDATA[<h1 id="新日志"><a href="#新日志" class="headerlink" title="新日志"></a>新日志</h1><h2 id="测试下"><a href="#测试下" class="headerlink" title="测试下"></a>测试下</h2><p>这是一张图片</p>
+<img src="shanshui.jpg" class="img-logo" />
+
+]]></content>
+      <tags>
+        <tag>风景</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>运维总结经验</title>
     <url>/blog/a5f39aa7/</url>
     <content><![CDATA[<h2 id="Ubuntu系统盘迁移新机器"><a href="#Ubuntu系统盘迁移新机器" class="headerlink" title="Ubuntu系统盘迁移新机器"></a>Ubuntu系统盘迁移新机器</h2><p>Ubuntu服务器系统迁移后，如何在新机器上找网卡信息，并修复网络问题？</p>
@@ -126,6 +141,35 @@
       <tags>
         <tag>Ubuntu</tag>
         <tag>运维服务</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo优化</title>
+    <url>/blog/7b3ddb57/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  优化 HEXO 博客，有一些坑需要注意</p>
+<a id="more"></a>
+
+<h2 id="博客网站连接URL永久化设置"><a href="#博客网站连接URL永久化设置" class="headerlink" title="博客网站连接URL永久化设置"></a>博客网站连接URL永久化设置</h2><p>主要使用插件<a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="noopener">hexo-addrlin</a>对文章做永久化链接，安装命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+<p>在Hexo 根目录中的配置文件<code>_config.yml</code>中修改：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: :abbrlink&#x2F;</span><br><span class="line">#abbrlink config</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: dec    # 进制：dec(default) and hex</span><br></pre></td></tr></table></figure>
+<p>在使用了这个插件后，需要执行一次<code>hexo clean</code>，否则之前的博文可能会变为undefined。</p>
+<h2 id="站内搜索"><a href="#站内搜索" class="headerlink" title="站内搜索"></a>站内搜索</h2><p>主要使用插件<a href="https://github.com/theme-next/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-searchdb</a>对站内进行关键字搜索，安装命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+<p>在根目录中的配置文件<code>_config.yml</code>中添加：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br><span class="line">  content: true</span><br></pre></td></tr></table></figure>
+<p>在单个文档中<em>front-matter</em>添加<code>indexing: false</code>可以避免搜索该文档。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://zuiyu1818.cn/posts/NexT_seourl.html" target="_blank" rel="noopener">醉渔小站</a></li>
+<li><a href="https://blog.csdn.net/cpongo3/article/details/98633222" target="_blank" rel="noopener">Hexo插件使用</a></li>
+<li><a href="https://github.com/theme-next/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-searchdb</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo优化，Hexo</tag>
       </tags>
   </entry>
 </search>
