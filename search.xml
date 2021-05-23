@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>IoT_protocol</title>
-    <url>/blog/a5c5e240/</url>
-    <content><![CDATA[<h1 id="物联网（IoT）协议"><a href="#物联网（IoT）协议" class="headerlink" title="物联网（IoT）协议"></a>物联网（IoT）协议</h1><p>许多通信协议虽然众所周知，但是换存在一些新的协议，用于物联网。实际工程中，会根据不同的应用，有些因素，如范围，数据要求，安全和电力需求和电池寿命将决定一个选择或某种形式的技术组合。</p>
-<h2 id="Bluetooth-蓝牙"><a href="#Bluetooth-蓝牙" class="headerlink" title="Bluetooth(蓝牙)"></a>Bluetooth(蓝牙)</h2><p>蓝牙是一个重要的短距离通信技术，在计算和许多消费产品市场中非常重要。它对可穿戴的产品有望成为关键，在通常许多情况下，智能电话就能够通过其连接到IoT。新的低功耗蓝牙（BLE）或叫做智能蓝牙，是物联网应用的一个重要协议。它提供与普通蓝牙相近的传输距离，但是能够明显降低功耗。</p>
+    <title>Hexo优化</title>
+    <url>/blog/7b3ddb57/</url>
+    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  优化 HEXO 博客，有一些坑需要注意</p>
+<a id="more"></a>
+
+<h2 id="博客网站连接URL永久化设置"><a href="#博客网站连接URL永久化设置" class="headerlink" title="博客网站连接URL永久化设置"></a>博客网站连接URL永久化设置</h2><p>主要使用插件<a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="noopener">hexo-addrlin</a>对文章做永久化链接，安装命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
+<p>在Hexo 根目录中的配置文件<code>_config.yml</code>中修改：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: :abbrlink&#x2F;</span><br><span class="line">#abbrlink config</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: dec    # 进制：dec(default) and hex</span><br></pre></td></tr></table></figure>
+<p>在使用了这个插件后，需要执行一次<code>hexo clean</code>，否则之前的博文可能会变为undefined。</p>
+<h2 id="站内搜索"><a href="#站内搜索" class="headerlink" title="站内搜索"></a>站内搜索</h2><p>主要使用插件<a href="https://github.com/theme-next/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-searchdb</a>对站内进行关键字搜索，安装命令：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
+<p>在根目录中的配置文件<code>_config.yml</code>中添加：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br><span class="line">  content: true</span><br></pre></td></tr></table></figure>
+<p>在单个文档中<em>front-matter</em>添加<code>indexing: false</code>可以避免搜索该文档。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
+<li><a href="https://zuiyu1818.cn/posts/NexT_seourl.html" target="_blank" rel="noopener">醉渔小站</a></li>
+<li><a href="https://blog.csdn.net/cpongo3/article/details/98633222" target="_blank" rel="noopener">Hexo插件使用</a></li>
+<li><a href="https://github.com/theme-next/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-searchdb</a></li>
+</ul>
 ]]></content>
       <categories>
-        <category>IoT</category>
+        <category>Hexo</category>
       </categories>
+      <tags>
+        <tag>Hexo优化，Hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -89,6 +108,17 @@
 ]]></content>
   </entry>
   <entry>
+    <title>newpage</title>
+    <url>/blog/606023cc/</url>
+    <content><![CDATA[<h1 id="新日志"><a href="#新日志" class="headerlink" title="新日志"></a>新日志</h1><h2 id="测试下"><a href="#测试下" class="headerlink" title="测试下"></a>测试下</h2><p>这是一张图片</p>
+<img src="shanshui.jpg" class="img-logo" />
+
+]]></content>
+      <tags>
+        <tag>风景</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>初衷</title>
     <url>/blog/7c1fc327/</url>
     <content><![CDATA[<h1 id="初衷"><a href="#初衷" class="headerlink" title="初衷"></a>初衷</h1><p>很早以前一直想着自己想维护一个博客，主要是想着对自己的知识做一个积累，内容做一个分享。让自己在提升的过程中，也能给别人一点点帮助。</p>
@@ -114,15 +144,14 @@
       </tags>
   </entry>
   <entry>
-    <title>newpage</title>
-    <url>/blog/606023cc/</url>
-    <content><![CDATA[<h1 id="新日志"><a href="#新日志" class="headerlink" title="新日志"></a>新日志</h1><h2 id="测试下"><a href="#测试下" class="headerlink" title="测试下"></a>测试下</h2><p>这是一张图片</p>
-<img src="shanshui.jpg" class="img-logo" />
-
+    <title>IoT_protocol</title>
+    <url>/blog/a5c5e240/</url>
+    <content><![CDATA[<h1 id="物联网（IoT）协议"><a href="#物联网（IoT）协议" class="headerlink" title="物联网（IoT）协议"></a>物联网（IoT）协议</h1><p>许多通信协议虽然众所周知，但是换存在一些新的协议，用于物联网。实际工程中，会根据不同的应用，有些因素，如范围，数据要求，安全和电力需求和电池寿命将决定一个选择或某种形式的技术组合。</p>
+<h2 id="Bluetooth-蓝牙"><a href="#Bluetooth-蓝牙" class="headerlink" title="Bluetooth(蓝牙)"></a>Bluetooth(蓝牙)</h2><p>蓝牙是一个重要的短距离通信技术，在计算和许多消费产品市场中非常重要。它对可穿戴的产品有望成为关键，在通常许多情况下，智能电话就能够通过其连接到IoT。新的低功耗蓝牙（BLE）或叫做智能蓝牙，是物联网应用的一个重要协议。它提供与普通蓝牙相近的传输距离，但是能够明显降低功耗。</p>
 ]]></content>
-      <tags>
-        <tag>风景</tag>
-      </tags>
+      <categories>
+        <category>IoT</category>
+      </categories>
   </entry>
   <entry>
     <title>运维总结经验</title>
@@ -141,35 +170,6 @@
       <tags>
         <tag>Ubuntu</tag>
         <tag>运维服务</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo优化</title>
-    <url>/blog/7b3ddb57/</url>
-    <content><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>  优化 HEXO 博客，有一些坑需要注意</p>
-<a id="more"></a>
-
-<h2 id="博客网站连接URL永久化设置"><a href="#博客网站连接URL永久化设置" class="headerlink" title="博客网站连接URL永久化设置"></a>博客网站连接URL永久化设置</h2><p>主要使用插件<a href="https://github.com/rozbo/hexo-abbrlink" target="_blank" rel="noopener">hexo-addrlin</a>对文章做永久化链接，安装命令：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-<p>在Hexo 根目录中的配置文件<code>_config.yml</code>中修改：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">permalink: :abbrlink&#x2F;</span><br><span class="line">#abbrlink config</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: dec    # 进制：dec(default) and hex</span><br></pre></td></tr></table></figure>
-<p>在使用了这个插件后，需要执行一次<code>hexo clean</code>，否则之前的博文可能会变为undefined。</p>
-<h2 id="站内搜索"><a href="#站内搜索" class="headerlink" title="站内搜索"></a>站内搜索</h2><p>主要使用插件<a href="https://github.com/theme-next/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-searchdb</a>对站内进行关键字搜索，安装命令：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-searchdb --save</span><br></pre></td></tr></table></figure>
-<p>在根目录中的配置文件<code>_config.yml</code>中添加：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  format: html</span><br><span class="line">  limit: 10000</span><br><span class="line">  content: true</span><br></pre></td></tr></table></figure>
-<p>在单个文档中<em>front-matter</em>添加<code>indexing: false</code>可以避免搜索该文档。</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><ul>
-<li><a href="https://zuiyu1818.cn/posts/NexT_seourl.html" target="_blank" rel="noopener">醉渔小站</a></li>
-<li><a href="https://blog.csdn.net/cpongo3/article/details/98633222" target="_blank" rel="noopener">Hexo插件使用</a></li>
-<li><a href="https://github.com/theme-next/hexo-generator-search" target="_blank" rel="noopener">hexo-generator-searchdb</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>Hexo优化，Hexo</tag>
       </tags>
   </entry>
 </search>
